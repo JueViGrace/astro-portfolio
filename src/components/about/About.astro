@@ -1,0 +1,33 @@
+---
+import Badge from '../Badge.astro';
+import SocialNav from '../social/SocialNav.astro';
+---
+
+<div class="flex flex-col gap-2 py-4">
+  <div class="flex justify-center items-center gap-x-4">
+    <img class="rounded-full size-12" src="/me.jpeg" alt="daniel photo" />
+    <h1
+      class="flex flex-col gap-3 py-2 sm:flex-row font-bold text-white text-3xl md:text-4xl lg:text-5xl"
+    >
+      Hey, soy Daniel
+      <a
+        href="https://linkedin.com/in/daniel-zabala-147aa5136"
+        target="_blank"
+        rel="noopener"
+        class="flex justify-center items-center"
+      >
+        <Badge>Disponible para trabajar</Badge>
+      </a>
+    </h1>
+  </div>
+  <h2 class="text-xl text-pretty">
+    <span class="">+2 años de experiencia. </span>
+    <span class="text-yellow-200/90"> Desarrollador Móvil y Backend. </span>
+    <span class="text-blue-200/90">De Maracaibo, Venezuela 🇻🇪</span>.
+    <span class="text-red-200/90 opacity-85">
+      Especializado en crear aplicaciones móviles y servidores web backend
+      robustos y escalables.
+    </span>
+  </h2>
+</div>
+<SocialNav />

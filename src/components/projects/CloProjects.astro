@@ -1,0 +1,61 @@
+---
+import { TAGS } from '../Tags.astro';
+import ProjectItem from './ProjectItem.astro';
+
+const CLOSS_PROJECTS = [
+  {
+    title: 'AC-CLOSS App en Kotlin con Android Native Views',
+    description:
+      'Una aplicación realizada para la empresa Comercializadora la Occidental que permite al usuario ver detalladamente las actividades de sus vendedores, clientes y pedidos.',
+    old: true,
+    link: '#',
+    github: null,
+    image: null,
+    tags: [TAGS.KOTLIN, TAGS.ANDROID, TAGS.SQLITE],
+  },
+  {
+    title: 'CLOSS API en Typescript con Express ',
+    description:
+      'Un proyecto propuesto para reemplazar y modernizar las APIs utilizadas por las aplicaciones desarrolladas para la empresa.',
+    old: true,
+    link: '#',
+    github: null,
+    image: null,
+    tags: [TAGS.TYPESCRIPT, TAGS.EXPRESS, TAGS.MYSQL, TAGS.SQL],
+  },
+  {
+    title: 'AC-CLOSS App con Kotlin en Jetpack Compose ',
+    description:
+      'Una aplicación realizada para la empresa Comercializadora la Occidental que permite al usuario ver detalladamente las actividades de sus vendedores, clientes y pedidos. Rediseñada para dar una mejor experiencia al usuario dandole una mayor interactividad.',
+    old: false,
+    link: '#',
+    github: 'https://github.com/JueViGrace/accloss',
+    image: null,
+    tags: [
+      TAGS.KOTLIN,
+      TAGS.JETPACK_COMPOSE,
+      TAGS.GRADLE,
+      TAGS.SQLITE,
+      TAGS.SQL,
+      TAGS.KTOR,
+    ],
+  },
+  {
+    title: 'CLOSS API en Kotlin con Ktor',
+    description:
+      'Un proyecto propuesto para reemplazar y modernizar las APIs utilizadas por las aplicaciones desarrolladas para la empresa. Inspirado en Kotlin Multiplatform, utilizando Kotlin del lado del servidor, permitiendo reutlización de código junto a las aplicaciones ya desarrolladas en el mismo lenguaje.',
+    old: false,
+    link: '#',
+    github: 'https://github.com/JueViGrace/clo_kt',
+    image: null,
+    tags: [TAGS.KOTLIN, TAGS.KTOR, TAGS.GRADLE, TAGS.POSTGRESQL, TAGS.SQL],
+  },
+];
+---
+
+<div class="flex flex-col justify-start items-center gap-2 w-full">
+  <h2 class="text-2xl font-semibold text-blue-200 w-full">
+    Comercializadora la Occidental
+  </h2>
+  {CLOSS_PROJECTS.map((project) => <ProjectItem project={project} />)}
+</div>

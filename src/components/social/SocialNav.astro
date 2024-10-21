@@ -1,0 +1,21 @@
+---
+import GithubIcon from '../../icons/GithubIcon.astro';
+import LinkedInIcon from '../../icons/LinkedInIcon.astro';
+import MailIcon from '../../icons/MailIcon.astro';
+import SocialChip from './SocialChip.astro';
+---
+
+<nav class="flex justify-center items-center gap-4 flex-wrap">
+  <SocialChip href="https://linkedin.com/in/daniel-zabala-147aa5136">
+    <LinkedInIcon class="size-4 md:size-6" />
+    LinkedIn
+  </SocialChip>
+  <SocialChip href="https://github.com/JueViGrace">
+    <GithubIcon class="size-4 md:size-6" />
+    Github
+  </SocialChip>
+  <SocialChip href="mailto:danielzabalanava@gmail.com">
+    <MailIcon class="size-4 md:size-6" />
+    danielzabalanava@gmail.com
+  </SocialChip>
+</nav>

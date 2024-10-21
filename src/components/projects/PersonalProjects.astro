@@ -1,0 +1,33 @@
+---
+import { TAGS } from '../Tags.astro';
+import ProjectItem from './ProjectItem.astro';
+
+const PERSONAL_PROJECTS = [
+  {
+    title: 'Neovim Setup',
+    description: 'Mi configuración de Neovim. :)',
+    old: false,
+    link: '#',
+    github: 'https://github.com/JueViGrace/nvim',
+    image: null,
+    tags: [TAGS.LUA],
+  },
+  {
+    title: 'Este porfolio',
+    description:
+      'Un porfolio minimalista realizado utilizando Astro con Typescript y TailwindCSS para los estilos.',
+    old: false,
+    link: '#',
+    github: 'https://github.com/JueViGrace/astro-portfolio',
+    image: null,
+    tags: [TAGS.TYPESCRIPT, TAGS.ASTRO, TAGS.TAILWIND],
+  },
+];
+---
+
+<div class="flex flex-col justify-start items-center gap-2 w-full">
+  <h2 class="text-2xl font-semibold text-green-300 w-full">
+    Projectos personales
+  </h2>
+  {PERSONAL_PROJECTS.map((project) => <ProjectItem project={project} />)}
+</div>

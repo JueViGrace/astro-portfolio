@@ -1,0 +1,95 @@
+---
+import { TAGS } from '../Tags.astro';
+import ProjectItem from './ProjectItem.astro';
+
+const BAKERY_PROJECTS = [
+  {
+    title: 'Bakery User en Typescript con Angular',
+    description:
+      'Proyecto frontend de repostería para ver productos y crear ordenes para los usuarios registrados.',
+    old: true,
+    link: '#',
+    github: 'https://github.com/JueViGrace/bakery-user-old',
+    image: null,
+    tags: [TAGS.TYPESCRIPT, TAGS.ANGULAR],
+  },
+  {
+    title: 'Bakery Admin en Typescript con Angular',
+    description:
+      'Proyecto frontend para la administrar productos y datos de ordenes realizadas por usuarios registrados.',
+    old: true,
+    link: '#',
+    github: 'https://github.com/JueViGrace/bakery-admin-old',
+    image: null,
+    tags: [TAGS.TYPESCRIPT, TAGS.ANGULAR],
+  },
+  {
+    title: 'Bakery Backend en Typescript con NestJs',
+    description:
+      'Backend utilizado para manejar las peticiones realizadas por otros proyectos de la misma tienda.',
+    old: true,
+    link: '#',
+    github: 'https://github.com/JueViGrace/bakery-backend-old',
+    image: null,
+    tags: [TAGS.TYPESCRIPT, TAGS.NESTJS, TAGS.MONGODB],
+  },
+  {
+    title: 'Bakery App en Kotlin con Jetpack Compose',
+    description:
+      'Aplicación móvil propuesta para ampliar el alcance de las aplicaciones de la tienda.',
+    old: true,
+    link: '#',
+    github: 'https://github.com/JueViGrace/bakery-app-old',
+    image: null,
+    tags: [
+      TAGS.KOTLIN,
+      TAGS.JETPACK_COMPOSE,
+      TAGS.GRADLE,
+      TAGS.SQLITE,
+      TAGS.SQL,
+    ],
+  },
+  {
+    title: 'Bakery Backend en Kotlin con Ktor',
+    description:
+      'Proyecto planeado para sustituir el Backend desarrollado en Typescript debido a la mayor facilidad que proporciona Kotlin.',
+    old: false,
+    link: '#',
+    github: 'https://github.com/JueViGrace/bakery-kt',
+    image: null,
+    tags: [TAGS.KOTLIN, TAGS.GRADLE, TAGS.KTOR, TAGS.POSTGRESQL, TAGS.SQL],
+  },
+  {
+    title: 'Bakery App en Kotlin Multiplatform con Compose Multiplatform',
+    description:
+      'Aplicación multiplataforma planteada para mejorar las aplicaciones anteriormente desarrolladas para la tienda.',
+    old: false,
+    link: '#',
+    github: 'https://github.com/JueViGrace/bakery-app',
+    image: null,
+    tags: [
+      TAGS.KOTLIN,
+      TAGS.COMPOSE_MULTIPLATFORM,
+      TAGS.GRADLE,
+      TAGS.SQLITE,
+      TAGS.SQL,
+      TAGS.KTOR,
+    ],
+  },
+  {
+    title: 'Bakery Backend en Go',
+    description:
+      'Proyecto backend en Go que plantea una mejor y más rápida solución para el manejo del lado del servidor de la tienda',
+    old: false,
+    link: '#',
+    github: 'https://github.com/JueViGrace/bakery-go',
+    image: null,
+    tags: [TAGS.GO, TAGS.POSTGRESQL, TAGS.SQL],
+  },
+];
+---
+
+<div class="flex flex-col justify-start items-center gap-2 w-full">
+  <h2 class="text-2xl font-semibold text-red-200 w-full">Bakery and Deserts</h2>
+  {BAKERY_PROJECTS.map((project) => <ProjectItem project={project} />)}
+</div>
