@@ -1,5 +1,3 @@
 # Daniel Zabala Portfolio
 
-```text
-Site: https://juevigrace.github.io/portfolio/
-```
+![See website](https://juevigrace.github.io/portfolio/)
