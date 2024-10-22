@@ -1,0 +1,29 @@
+---
+import SectionContainer from '../components/SectionContainer.astro';
+import Layout from '../layouts/Layout.astro';
+import CodeIcon from '../icons/CodeIcon.astro';
+import BakeryProjects from '../components/projects/BakeryProjects.astro';
+import PersonalProjects from '../components/projects/PersonalProjects.astro';
+import CloProjects from '../components/projects/CloProjects.astro';
+
+import Main from '../components/Main.astro';
+---
+
+<Layout
+  title="Daniel Zabala Porfolio - Mis proyectos"
+  description="Proyectos desarrollados por mi"
+>
+  <Main>
+    <SectionContainer id="projects" class="py-12">
+      <div class="flex flex-col justify-evenly items-start gap-3">
+        <h1 class="text-2xl font-semibold flex gap-x-3 items-center">
+          <CodeIcon class="size-7" />
+          Proyectos
+        </h1>
+        <CloProjects />
+        <BakeryProjects />
+        <PersonalProjects />
+      </div>
+    </SectionContainer>
+  </Main>
+</Layout>

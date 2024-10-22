@@ -3,24 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import About from '../components/about/About.astro';
 import Experience from '../components/experience/Experience.astro';
-import Projects from '../components/projects/Projects.astro';
+import Main from '../components/Main.astro';
 ---
 
 <Layout
   title="Portfolio de Daniel Zabala - Desarrollador y Programador Móvil y Backend"
   description="Contrata a Daniel Zabala para crear tu applicacion web o móvil"
 >
-  <main class="flex flex-col flex-grow justify-start items-center px-2 sm:px-4">
+  <Main>
     <SectionContainer id="about" class="pt-12 pb-6 sm:pb-12 sm:pt-24">
       <About />
     </SectionContainer>
 
-    <SectionContainer id="experience" class="py-6 sm:py-12">
+    <SectionContainer id="experience" class="pt-6 pb-12 sm:pt-12 sm:pb-24">
       <Experience />
     </SectionContainer>
-
-    <SectionContainer id="projects" class="py-6 sm:py-12">
-      <Projects />
-    </SectionContainer>
-  </main>
+  </Main>
 </Layout>
